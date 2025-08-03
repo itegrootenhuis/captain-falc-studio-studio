@@ -21,15 +21,6 @@ export const landingPageType = defineType({
       },
     }),
     defineField({
-      name: 'backgroundColor',
-      title: 'Background Color',
-      type: 'string',
-      description: 'The landing page will fallback to this color if no image is provided.',
-      options: {
-        list: ['Primary', 'Secondary', 'Tertiary'],
-      },
-    }),
-    defineField({
       name: 'headline',
       title: 'Headline',
       type: 'string',

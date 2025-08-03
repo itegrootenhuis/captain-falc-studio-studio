@@ -13,14 +13,6 @@ export const bioPageType = defineType({
       validation: (rule) => rule.required(),
     }),
     defineField({
-      name: 'backgroundColor',
-      title: 'Background Color',
-      type: 'string',
-      options: {
-        list: ['Primary', 'Secondary', 'Tertiary'],
-      },
-    }),
-    defineField({
       name: 'bioContent',
       title: 'Bio Content',
       type: 'array',

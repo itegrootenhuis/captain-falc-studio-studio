@@ -26,6 +26,14 @@ export const audioType = defineType({
       },
       validation: (rule) => rule.required(),
     }),
+    defineField({
+      name: 'sortOrder',
+      title: 'Sort Order',
+      description:
+        'This will determine the order in which the tracks display in the player from top to bottom',
+      type: 'number',
+      validation: (rule) => rule.required(),
+    }),
   ],
   preview: {
     select: {

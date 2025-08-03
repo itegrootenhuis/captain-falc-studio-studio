@@ -24,10 +24,5 @@ export const globalSettingsType = defineType({
       title: 'Instagram Url',
       type: 'string',
     }),
-    defineField({
-      name: 'spotifyUrl',
-      title: 'Spotify Url',
-      type: 'string',
-    }),
   ],
 })

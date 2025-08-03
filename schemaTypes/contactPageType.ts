@@ -13,12 +13,11 @@ export const contactPageType = defineType({
       validation: (rule) => rule.required(),
     }),
     defineField({
-      name: 'backgroundColor',
-      title: 'Background Color',
+      name: 'contactFromTitle',
+      title: 'Contatct From Title',
+      description: 'This field is the text above the contact form',
       type: 'string',
-      options: {
-        list: ['Primary', 'Secondary', 'Tertiary'],
-      },
+      validation: (rule) => rule.required(),
     }),
   ],
   preview: {
