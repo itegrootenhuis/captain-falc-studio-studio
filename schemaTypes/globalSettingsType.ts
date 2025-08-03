@@ -12,9 +12,23 @@ export const globalSettingsType = defineType({
       type: 'string',
     }),
     defineField({
+      name: 'websiteDescription',
+      title: 'Website Description',
+      description: 'This field is the metadata description for when you share the site',
+      type: 'string',
+    }),
+    defineField({
+      name: 'metadataImage',
+      title: 'Metadata Image',
+      type: 'image',
+      options: {
+        accept: 'image/*',
+      },
+    }),
+    defineField({
       name: 'favicon',
       title: 'Favicon',
-      type: 'file',
+      type: 'image',
       options: {
         accept: 'image/*',
       },

@@ -19,6 +19,12 @@ export const contactPageType = defineType({
       type: 'string',
       validation: (rule) => rule.required(),
     }),
+    defineField({
+      name: 'contactFromSubTitle',
+      title: 'Contatct From Sub-Title',
+      description: 'This field is the text above the contact form',
+      type: 'string',
+    }),
   ],
   preview: {
     select: {
